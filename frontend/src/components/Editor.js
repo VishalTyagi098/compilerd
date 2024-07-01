@@ -3,7 +3,7 @@ import { Controlled as CodeMirror } from "react-codemirror2";
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material.css";
 
-function CodeEditor({ script, setScript }) {
+function Editor({ script, setScript }) {
   return (
     <div className="code-editor">
       <CodeMirror
@@ -22,4 +22,4 @@ function CodeEditor({ script, setScript }) {
   );
 }
 
-export default CodeEditor;
+export default Editor;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function LanguageSelector({ language, setLanguage }) {
+function Language({ language, setLanguage }) {
   return (
     <div className="language-selector">
       <label htmlFor="language">Select Language:</label>
@@ -19,4 +19,4 @@ function LanguageSelector({ language, setLanguage }) {
   );
 }
 
-export default LanguageSelector;
+export default Language;

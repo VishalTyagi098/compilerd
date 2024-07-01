@@ -1,6 +1,6 @@
 import React from "react";
 
-function OutputDisplay({ output }) {
+function Result({ output }) {
   return (
     <div className="output-display">
       <h3>Output:</h3>
@@ -9,4 +9,4 @@ function OutputDisplay({ output }) {
   );
 }
 
-export default OutputDisplay;
+export default Result;

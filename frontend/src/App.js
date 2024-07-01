@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
-import CodeEditor from "./components/CodeEditor";
-import OutputDisplay from "./components/OutputDisplay.js";
-import LanguageSelector from "./components/LanguageSelector";
+import Editor from "./components/Editor";
+import Result from "./components/Result.js";
+import Language from "./components/Language";
 
 function App() {
   const [language, setLanguage] = useState("nodejs");
@@ -24,10 +24,10 @@ function App() {
 
   return (
     <div className="App">
-      <LanguageSelector language={language} setLanguage={setLanguage} />
-      <CodeEditor script={script} setScript={setScript} />
+      <Language language={language} setLanguage={setLanguage} />
+      <Editor script={script} setScript={setScript} />
       <button onClick={handleSubmit}>Run</button>
-      <OutputDisplay output={output} />
+      <Result output={output} />
     </div>
   );
 }
